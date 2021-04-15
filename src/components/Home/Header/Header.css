@@ -1,0 +1,9 @@
+.header-container {
+    height:900px;
+    width: 1920px;
+    position:absolute;
+    right:0;
+    left: 0;
+    background-image: url('../../../images/2nd.jpg');
+    background-size: cover;
+}
