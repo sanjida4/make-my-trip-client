@@ -1,0 +1,9 @@
+.booking-container {
+    height:900px;
+    width: 1920px;
+    position:absolute;
+    right:0;
+    left: 0;
+    background-image: url('../../../images/3rd.jpg');
+    background-size: cover;
+}

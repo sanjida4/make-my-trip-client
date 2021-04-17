@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../../Shared/Navbar/Navbar';
 import HeaderMain from './HeaderMain/HeaderMain';
 import './Header.css';
 import About from '../About/About';
@@ -7,7 +7,7 @@ import Packages from '../Packages/Packages';
 import FeaturedPackage from '../FeaturedPackage/FeaturedPackage';
 import Reviews from '../Reviews/Reviews';
 import Contact from '../Contact/Contact';
-import Footer from '../Footer/Footer';
+import Footer from '../../Shared/Footer/Footer';
 
 const Header = () => {
     return (

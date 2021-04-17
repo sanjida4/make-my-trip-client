@@ -3,9 +3,9 @@ import './Contact.css';
 
 const Contact = () => {
     return (
-        <section className="contact my-1 py-5">
+        <section id="contact" className="contact my-1 py-5">
             <div className="container">
-                <div className="section-header text-center text-white mb-5">
+                <div className="section-header text-center mb-5">
                     <h1>Contact with us</h1>
                 </div>
                 <div className="col-md-9 mx-auto">

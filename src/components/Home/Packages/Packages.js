@@ -8,15 +8,21 @@ import './Packages.css';
 const packageData = [
     {
         name: 'Sajek Valley',
-        img: sajek
+        img: sajek,
+        departure: `Departure Date: 28th April, 2021`,
+        arrival: 'Arrival Date: 2nd May, 2021'
     },
     {
         name: 'Pangthumai Waterfall',
-        img: pangthumai
+        img: pangthumai,
+        departure: `Departure Date: 28th April, 2021`,
+        arrival: 'Arrival Date: 2nd May, 2021'
     },
     {
         name: 'Kaptai Lake',
-        img: kaptai
+        img: kaptai,
+        departure: `Departure Date: 28th April, 2021`,
+        arrival: 'Arrival Date: 2nd May, 2021'
     }
 ]
 
