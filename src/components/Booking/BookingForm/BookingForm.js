@@ -24,7 +24,7 @@ const BookingForm = ({ modalIsOpen, closeModal, date, bookingOn }) => {
         data.date = date;
         data.created = new Date();
 
-        fetch('http://localhost:5000/addBooking', {
+        fetch('https://quiet-depths-98178.herokuapp.com/addBooking', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

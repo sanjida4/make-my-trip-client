@@ -11,7 +11,7 @@ import HeaderMain from '../HeaderMain/HeaderMain';
 
 const Header = () => {
     return (
-        <div id="home" className="header-container">
+        <div id="home" className="header-container container-fluid">
             <Navbar></Navbar>
             <HeaderMain></HeaderMain>
             <About></About>

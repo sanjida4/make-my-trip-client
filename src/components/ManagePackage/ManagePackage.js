@@ -6,13 +6,13 @@ const ManagePackage = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://quiet-depths-98178.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, []);
 
     const handleDeleteProduct = id => {
-        fetch(`http://localhost:5000/packages/${id}`, {
+        fetch(`https://quiet-depths-98178.herokuapp.com/packages/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

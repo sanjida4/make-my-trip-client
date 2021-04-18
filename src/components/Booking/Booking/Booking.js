@@ -11,7 +11,7 @@ const Booking = () => {
         setSelectedDate(date);
     }
     return (
-        <div className="booking-container">
+        <div className="booking-container container-fluid">
             <Navbar></Navbar>
             <BookingHeader handleDateChange={handleDateChange}></BookingHeader>
             <BookTour date={selectedDate}></BookTour>

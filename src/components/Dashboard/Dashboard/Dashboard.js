@@ -20,7 +20,7 @@ const Dashboard = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookingsByDate', {
+        fetch('https://quiet-depths-98178.herokuapp.com/bookingsByDate', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ date: selectedDate, email: loggedInUser.email })
@@ -31,7 +31,7 @@ const Dashboard = () => {
 
     return (
         <section>
-            <div style={containerStyle} className=" container-fluid row">
+            <div style={containerStyle} className= "container-fluid row">
                 <div className="col-md-2  col-sm-6 col-12">
                     <Sidebar></Sidebar>
                 </div>

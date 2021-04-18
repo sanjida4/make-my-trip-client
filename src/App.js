@@ -14,6 +14,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import AddAdmin from './components/AddAdmin/AddAdmin';
 import AddPackages from './components/AddPackages/AddPackages';
 import ManagePackage from './components/ManagePackage/ManagePackage';
+import Payment from './components/Payment/Payment';
 
 export const UserContext = createContext();
 
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route path="/managePackage">
             <ManagePackage></ManagePackage>
+          </Route>
+          <Route path="/payment">
+            <Payment></Payment>
           </Route>
         </Switch>
       </Router>

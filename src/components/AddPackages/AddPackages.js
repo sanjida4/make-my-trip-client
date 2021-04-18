@@ -23,7 +23,7 @@ const AddPackages = () => {
         formData.append('name', info.name);
         formData.append('email', info.email);
 
-        fetch('http://localhost:5000/addPackage', {
+        fetch('https://quiet-depths-98178.herokuapp.com/addPackage', {
             method: 'POST',
             body: formData
         })
