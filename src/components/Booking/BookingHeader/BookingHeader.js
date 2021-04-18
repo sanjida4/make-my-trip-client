@@ -17,7 +17,7 @@ const BookingHeader = ({handleDateChange}) => {
             <div style={{marginTop: '160px'}} className="col-md-4 offset-md-1">
                 <h1 style={{ color: 'darkblue' }}>THE TRIP OF YOUR <br /> DREAM</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta reprehenderit. Corrupti, qui debitis dolor ad natus officiis impedit non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fugiat quos nesciunt dolores cupiditate reiciendis assumenda nemo a temporibus officiis!</p>
-                <button type="button" class="btn btn-outline-secondary">LEARN MORE</button>
+                <button type="button" class="btn btn-outline-info">LEARN MORE</button>
             </div>
             
         </main>

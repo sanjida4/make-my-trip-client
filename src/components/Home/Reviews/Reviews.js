@@ -32,7 +32,7 @@ const Reviews = () => {
             <div className="container">
                <div className="section-header text-center">
                    <h5 className="text-primary text-uppercase">Reviews</h5>
-                   <h1 style={{color: 'darkblue'}}>What Our Customer Says </h1>
+                   <h1 style={{color: 'darkblue'}}>What Our Users Says </h1>
                </div>
                <div className="card-deck mt-5">
                     {

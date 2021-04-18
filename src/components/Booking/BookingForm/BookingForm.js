@@ -17,9 +17,25 @@ Modal.setAppElement('#root')
 
 const BookingForm = ({ modalIsOpen, closeModal, date, bookingOn }) => {
     const { register, handleSubmit, errors } = useForm();
+
     const onSubmit = data => {
-        console.log(data);
-        closeModal();
+        console.log(data)
+        data.tour = bookingOn;
+        data.date = date;
+        data.created = new Date();
+
+        fetch('http://localhost:5000/addBooking', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(done => {
+                if (done) {
+                    closeModal();
+                    alert('Booking Done!');
+                }
+            })
     }
 
     return (
@@ -33,7 +49,7 @@ const BookingForm = ({ modalIsOpen, closeModal, date, bookingOn }) => {
                 <h2 className="text-center">{bookingOn}</h2>
                 <p className="text-secondary text-center"><small>ON {date.toDateString()}</small></p>
                 <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
-                <div className="form-group">
+                    <div className="form-group">
                         <input type="text" ref={register({ required: true })} name="name" placeholder="Your Name" className="form-control" />
                         {errors.name && <span className="text-danger">This field is required</span>}
 

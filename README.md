@@ -1,4 +1,10 @@
 #Make My Trip 
 
-It's a website for people who love to travel around the country even around the world. 
+A website for people who loves to travel.
+It has- 
+1. React
+2. Router
+3. Auth (firebase integrated)
+4. API connection with localhost (node and mongodb)
+5. Payment Gateway
 

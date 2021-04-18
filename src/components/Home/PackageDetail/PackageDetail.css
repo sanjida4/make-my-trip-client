@@ -1,0 +1,8 @@
+.animation img{
+    height: 200px;
+    width: 350px; 
+}
+.animation img:hover{
+    height: 220px;
+    width: 370px;
+}
